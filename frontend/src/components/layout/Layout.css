@@ -1,0 +1,121 @@
+.page-shell {
+    min-height: 100vh;
+    background: #f3f6fb;
+}
+
+.main-header {
+    min-height: 82px;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 0 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+}
+
+.header-brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+}
+
+.brand-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+}
+
+.header-brand h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 900;
+    color: #111827;
+}
+
+.header-brand p {
+    margin: 3px 0 0;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 800;
+    padding: 10px 14px;
+    border-radius: 14px;
+    transition: 0.2s;
+}
+
+.header-nav a:hover,
+.header-nav a.active {
+    background: #eff6ff;
+    color: #1d4ed8;
+}
+
+.header-user {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.header-user span {
+    color: #6b7280;
+    font-size: 14px;
+    font-weight: 700;
+    max-width: 230px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.header-user button {
+    border: none;
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 10px 16px;
+    border-radius: 14px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.page-content {
+    padding: 34px;
+}
+
+@media (max-width: 1000px) {
+    .main-header {
+        height: auto;
+        padding: 18px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-user {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .page-content {
+        padding: 18px;
+    }
+}

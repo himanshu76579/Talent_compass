@@ -1,0 +1,32 @@
+{
+  "name": "skillpath-mern-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.16.0"
+  },
+  "scripts": {
+    "start": "node --env-file=.env src/server.js",
+    "dev": "node --env-file=.env --watch src/server.js",
+    "test": "node --test",
+    "test:unit": "node --test test/unit.test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.0",
+    "multer": "^2.0.2",
+    "nodemailer": "^10.0.12",
+    "pdf-parse": "^2.4.5",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^10.2.3",
+    "supertest": "^7.1.4"
+  }
+}
